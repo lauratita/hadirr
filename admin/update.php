@@ -69,7 +69,7 @@ if(isset($_GET['id'])){
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="daftarsiswa.php">Daftar Siswa <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Daftar Siswa <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="absensi.php">Absensi <span class="sr-only"></span></a>
@@ -94,7 +94,7 @@ if(isset($_GET['id'])){
 
     <nav class="navbar">
         <!-- <a href="#home">Home</a> -->
-        <a href="daftarsiswa.php">Daftar Siswa</a>
+        <a href="index.php">Daftar Siswa</a>
         <a href="absensi.php">Presensi</a>
         <a href="rekap.php">Rekap</a>
         <a href="#"></a>

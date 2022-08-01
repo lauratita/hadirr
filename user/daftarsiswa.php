@@ -34,7 +34,7 @@ if(isset($_POST["tampilkelas"])){
 
 
   mysqli_query($koneksi, "INSERT INTO siswa VALUES ('$nis', '$nama', '$jenis', '$alamat')");
-  // header("location: daftarsiswa.php");
+  // header("location: index.php");
 
 }
 
@@ -43,7 +43,7 @@ if(isset($_GET['id'])){
   $id = $_GET['id'];
 
   mysqli_query($koneksi, "DELETE FROM siswa WHERE nis = '$id' ");
-  header("location:daftarsiswa.php");
+  header("location:index.php");
 }
 
 // UPDATE SISWA
@@ -130,7 +130,7 @@ if(isset($_POST['btnUpdate'])){
 
     <nav class="navbar">
         <!-- <a href="#home">Home</a> -->
-        <a href="daftarsiswa.php">Daftar Siswa</a>
+        <a href="index.php">Daftar Siswa</a>
         <a href="absensi.php">Presensi</a>
         <!-- <a href="rekap.php">Rekap</a> -->
         <a href="#"></a>
@@ -240,7 +240,7 @@ if(isset($_POST['btnUpdate'])){
                       <td><?= $qketua['alamat'] ?></td>
                       
                       <!-- <td>
-                        <a href="daftarsiswa.php?id=<?=$qketua['nis']?>"
+                        <a href="index.php?id=<?=$qketua['nis']?>"
                         onclick="return confirm('Apakah anda yakin menghapus data tersebut?');"
                         class="btn btn-danger">Delete</a>
                         <a href="update.php?id=<?=$qketua['nis']?>" class="btn btn-warning">Edit</a>

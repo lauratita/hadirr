@@ -20,9 +20,9 @@ if(isset($_POST["tampilkelas"])){
     mysqli_query($koneksi, "INSERT INTO siswa VALUES ('$nis', '$nama', '$jenis', '$alamat','$idkls')");
     echo "<script>
                 alert('data berhasil ditambahkan!');
-                document.location.href = 'daftarsiswa.php';
+                document.location.href = 'index.php';
             </script>";
-    // header("location: daftarsiswa.php");
+    // header("location: index.php");
 
 }
 
@@ -33,9 +33,9 @@ if(isset($_GET['id'])){
     mysqli_query($koneksi, "DELETE FROM siswa WHERE nis = '$id' ");
     echo "<script>
                 alert('data berhasil dihapus!');
-                document.location.href = 'daftarsiswa.php?id_kelas=$idkls';
+                document.location.href = 'index.php?id_kelas=$idkls';
             </script>";
-    // header("location:daftarsiswa.php");
+    // header("location:index.php");
   }
 
 // UPDATE SISWA
@@ -52,9 +52,9 @@ if(isset($_POST['btnUpdate'])){
     id_kelas = '$idkls', nama = '$nama', jenis_kelamin = '$jenis', alamat = '$alamat' WHERE nis = '$nis' ");
     echo "<script>
         alert('data berhasil diubah!');
-        document.location.href = 'daftarsiswa.php?id_kelas=$idkls';
+        document.location.href = 'index.php?id_kelas=$idkls';
         </script>";
-    // header("location:daftarsiswa.php");
+    // header("location:index.php");
     
 }
 
@@ -119,7 +119,7 @@ if(isset($_POST['btnUpdate'])){
 
 <nav class="navbar">
         <!-- <a href="#home">Home</a> -->
-        <a href="daftarsiswa.php">Daftar Siswa</a>
+        <a href="index.php">Daftar Siswa</a>
         <a href="absensi.php">Presensi</a>
         <!-- <a href="rekap.php">Rekap</a> -->
         <a href="#"></a>

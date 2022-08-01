@@ -27,7 +27,7 @@ function selected($a, $b)
 
 
 // mysqli_query($koneksi, "INSERT INTO absensi VALUES ('nisn', 'nama')");
-// header("location: daftarsiswa.php");
+// header("location: index.php");
 
 // input presensi
  if (isset($_POST['btnAbsen'])) {
@@ -141,7 +141,7 @@ if(isset($_POST['btnUpdate'])){
 
     <nav class="navbar">
         <!-- <a href="#home">Home</a> -->
-        <a href="daftarsiswa.php">Daftar Siswa</a>
+        <a href="index.php">Daftar Siswa</a>
         <a href="absensi.php">Presensi</a>
         <!-- <a href="rekap.php">Rekap</a> -->
         <a href="#"></a>

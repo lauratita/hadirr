@@ -7,7 +7,7 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: daftarsiswa.php");
+    header("Location: index.php");
 }
 
 if (isset($_POST['submit'])) {
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: daftarsiswa.php");
+		header("Location: index.php");
 	} else {
 		echo "<script>alert('Username or Password is Wrong.');window.location.href='login.php'</script>";
 	}
